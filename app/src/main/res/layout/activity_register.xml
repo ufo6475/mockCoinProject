@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/registerPWAgainInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/registerPWInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registerPWInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerPWInput" />
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/registerTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/registerIDTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="@string/registerIDText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerIDInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerIDInput"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <EditText
+        android:id="@+id/registerIDInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ID"
+        app:layout_constraintBottom_toTopOf="@+id/registerFinBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/registerPWInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/registerIDInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registerIDInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerIDInput" />
+
+    <EditText
+        android:id="@+id/registerEmailInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="abc.gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/registerPWAgainInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registerPWAgainInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerPWAgainInput" />
+
+    <TextView
+        android:id="@+id/registerPWTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerPWText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerPWInput"
+        app:layout_constraintEnd_toEndOf="@+id/registerIDTextview"
+        app:layout_constraintStart_toStartOf="@+id/registerIDTextview"
+        app:layout_constraintTop_toTopOf="@+id/registerPWInput"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <TextView
+        android:id="@+id/registerPWAgainTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerPWAgainText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerPWAgainInput"
+        app:layout_constraintEnd_toEndOf="@+id/registerIDTextview"
+        app:layout_constraintStart_toStartOf="@+id/registerIDTextview"
+        app:layout_constraintTop_toTopOf="@+id/registerPWAgainInput" />
+
+    <TextView
+        android:id="@+id/registerEmailTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerEmailText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerEmailInput"
+        app:layout_constraintEnd_toEndOf="@+id/registerIDTextview"
+        app:layout_constraintStart_toStartOf="@+id/registerIDTextview"
+        app:layout_constraintTop_toTopOf="@+id/registerEmailInput" />
+
+    <Button
+        android:id="@+id/registerFinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registerFundsTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerInitfunds"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerUsdInput"
+        app:layout_constraintEnd_toEndOf="@+id/registerIDTextview"
+        app:layout_constraintStart_toStartOf="@+id/registerIDTextview"
+        app:layout_constraintTop_toTopOf="@+id/registerWonInput" />
+
+    <EditText
+        android:id="@+id/registerWonInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="단위: 원"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/registerEmailInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registerEmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmailInput" />
+
+    <EditText
+        android:id="@+id/registerUsdInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="단위: 테더 코인"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/registerEmailInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registerEmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerBitInput" />
+
+    <EditText
+        android:id="@+id/registerBitInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="단위: 비트코인"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/registerEmailInput"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/registerEmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/registerWonInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

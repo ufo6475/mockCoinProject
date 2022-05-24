@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/orderListView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/orderBuySellBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="매수"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/orderInitailBtn"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.624" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/orderBuyBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/hogaRed"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="매수"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/orderSellBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/btn"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="매도"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/orderPriceText"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/orderBuySellBtn"
+            app:layout_constraintStart_toStartOf="@+id/orderNumberText" />
+
+        <EditText
+            android:id="@+id/orderNumberText"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="28dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/orderPriceText"
+            app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/orderInitailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="초기화"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/orderBuySellBtn" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="수량"
+            app:layout_constraintBottom_toBottomOf="@+id/orderNumberText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/orderNumberText"
+            app:layout_constraintVertical_bias="0.523" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="가격"
+            app:layout_constraintBottom_toBottomOf="@+id/orderPriceText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/orderPriceText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

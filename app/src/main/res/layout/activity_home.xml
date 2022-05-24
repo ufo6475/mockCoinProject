@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/homeSearchButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/homeuserBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+    <ImageButton
+        android:id="@+id/homeBackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KRW"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/homeSearchButton"
+        app:layout_constraintEnd_toEndOf="@+id/homeSearchButton"
+        app:layout_constraintStart_toEndOf="@+id/homeBackButton"
+        app:layout_constraintTop_toTopOf="@+id/homeSearchButton" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/homeKRWText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/clicked_btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/mainMenu1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeBTCText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_weight="1"
+            android:background="@color/btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/mainMenu8"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeUSDTText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_weight="1"
+            android:background="@color/btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/mainMenu9"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInterText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_weight="1"
+            android:background="@color/btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/mainMenu2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/homeContainText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_weight="1"
+            android:background="@color/btn"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="보유 종목"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/homeListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeBackButton">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/mainItem1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/mainItem2" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mainItem3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/mainItem4" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/homeuserBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
